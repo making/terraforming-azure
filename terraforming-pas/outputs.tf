@@ -30,9 +30,9 @@ output "ops_manager_dns" {
   value = "${module.ops_manager.dns_name}"
 }
 
-output "optional_ops_manager_dns" {
-  value = "${module.ops_manager.optional_dns_name}"
-}
+# output "optional_ops_manager_dns" {
+#   value = "${module.ops_manager.optional_dns_name}"
+# }
 
 # output "mysql_dns" {
 #   value = "${module.pas.mysql_dns}"
@@ -195,9 +195,9 @@ output "ops_manager_ip" {
   value = "${module.ops_manager.ops_manager_public_ip}"
 }
 
-output "optional_ops_manager_public_ip" {
-  value = "${module.ops_manager.optional_ops_manager_public_ip}"
-}
+# output "optional_ops_manager_public_ip" {
+#   value = "${module.ops_manager.optional_ops_manager_public_ip}"
+# }
 
 output "ops_manager_private_ip" {
   value = "${module.ops_manager.ops_manager_private_ip}"
