@@ -34,13 +34,13 @@ output "optional_ops_manager_dns" {
   value = "${module.ops_manager.optional_dns_name}"
 }
 
-output "mysql_dns" {
-  value = "${module.pas.mysql_dns}"
-}
-
-output "tcp_domain" {
-  value = "${module.pas.tcp_domain}"
-}
+# output "mysql_dns" {
+#   value = "${module.pas.mysql_dns}"
+# }
+# 
+# output "tcp_domain" {
+#   value = "${module.pas.tcp_domain}"
+# }
 
 output "sys_domain" {
   value = "${module.pas.sys_domain}"
@@ -82,13 +82,13 @@ output "diego_ssh_lb_name" {
   value = "${module.pas.diego_ssh_lb_name}"
 }
 
-output "mysql_lb_name" {
-  value = "${module.pas.mysql_lb_name}"
-}
-
-output "tcp_lb_name" {
-  value = "${module.pas.tcp_lb_name}"
-}
+# output "mysql_lb_name" {
+#   value = "${module.pas.mysql_lb_name}"
+# }
+# 
+# output "tcp_lb_name" {
+#   value = "${module.pas.tcp_lb_name}"
+# }
 
 output "network_name" {
   value = "${module.infra.network_name}"
