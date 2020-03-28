@@ -210,13 +210,13 @@ resource "azurerm_network_security_group" "bosh_deployed_vms_security_group" {
   }
 
   security_rule {
-    name                       = "prometheus"
+    name                       = "tsdb"
     priority                   = 212
     direction                  = "Inbound"
     access                     = "Allow"
     protocol                   = "Tcp"
     source_port_range          = "*"
-    destination_port_range     = "9090"
+    destination_port_range     = "4449"
     source_address_prefix      = "Internet"
     destination_address_prefix = "*"
   }
